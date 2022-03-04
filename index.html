@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<style>
+    ul.custom-slider.slick-initialized.slick-slider{
+        max-width: 1203px;
+        /* border: 2px solid black; */
+        display: block;
+        margin: auto;
+        background: #e5c3d4;
+        border-radius: 10px;
+    }
+    .slick-prev:before, .slick-next:before{
+        color: black!important;
+    }
+    .custom-slider div{
+        margin: 2px 2px;
+        padding: 2px 2px;
+        height: 200px;
+    }
+    .custom-slider li{
+        list-style-type: none;
+    }
+    .custom-slider h2{
+        text-align: center;
+    }
+    .custom-slider p{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+      <h1>Slick Slider</h1>
+      <ul class="custom-slider">
+          <div>
+            <li>
+                <h2>Ankit</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, explicabo?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt doloribus tempora? Maxime, quae perferendis.</p>
+             </li>
+          </div>
+          <div>
+            <li>
+                <h2>Priya</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, culpa.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, molestias!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt doloribus tempora? Maxime, quae perferendis.</p>
+             </li>
+          </div>
+          <div>
+            <li>
+                <h2>vishal</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, culpa.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, dolore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt doloribus tempora? Maxime, quae perferendis.</p>
+             </li>
+          </div>
+          <div>
+            <li>
+                <h2>rahul</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, culpa.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, accusamus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt doloribus tempora? Maxime, quae perferendis.</p>
+             </li>
+          </div>
+      </ul>
+     
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+        $('.custom-slider').slick({
+        //   centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 1,
+          autoplay: 200
+        //   responsive: [
+        //       {
+        //       breakpoint: 768,
+        //       settings: {
+        //           arrows: false,
+        //           centerMode: true,
+        //           centerPadding: '40px',
+        //           slidesToShow: 3
+        //       }
+        //       },
+        //       {
+        //       breakpoint: 480,
+        //       settings: {
+        //           arrows: false,
+        //           centerMode: true,
+        //           centerPadding: '40px',
+        //           slidesToShow: 1
+        //       }
+        //       }
+        //   ]
+          });
+    </script>
+    </body>
+</html>
